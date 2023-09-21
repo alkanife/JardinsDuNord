@@ -3,21 +3,29 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="theme-color" content="#ffffff">
-    <!-- Les autres metadatas ont été supprimées pour la démo. -->
+    <meta name="keywords" content="jardins du nord, arthur beau, alkanife, portfolio, demo">
+    <meta name="description" content="Arthur Beau | Exemple de site vitrine avec Bootstrap 5 pour mon portfolio" />
+    <meta property="og:title" content="Jardins du Nord (démo portfolio)" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://arthurbeau.fr/jardinsdunord" />
+    <meta property="og:image" content="https://arthurbeau.fr/jardinsdunord/assets/img/logo_footer.png" />
+    <meta property="og:description" content="Exemple de site vitrine avec Bootstrap 5" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Arthur Beau | Portfolio" />
+    <meta name="theme-color" content="#70b342">
 
-    <title>Jardins Du Nord (projet d'école)</title>
-
-    <link rel="icon" type="image/png" href="img/logo_footer.png" />
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/site.css" asp-append-version="true"/>
+    <link rel="icon" type="image/png" href="assets/img/logo_footer.png" />
+    <link rel="stylesheet" href="https://share.alkanife.dev/bootstrap/5.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+    <title>Jardins Du Nord (démo portfolio)</title>
 </head>
 <body>
     <!-- Barre de navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-lg" id="nav">
         <div class="container">
             <!-- Logo -->
-            <img src="img/Logo_Nav_only.png" alt="Logo de l'entreprise Jardins du Nord : un logo vert d'une pelle cresant le sol, avec des petites feuilles sur le dessus." style="height: 67px;width: 87px;">
+            <a href="#"><img src="assets/img/Logo_Nav_only.png" alt="Logo de l'entreprise Jardins du Nord : un logo vert d'une pelle cresant le sol, avec des petites feuilles sur le dessus." style="height: 67px;width: 87px;"></a>
             
             <!-- Bouton mobile -->
             <button class="navbar-toggler" id="navbarBurgerButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Afficher navigation">
@@ -47,7 +55,7 @@
             <div class="row align-items-center">
                 <!-- Logo approfondi -->
                 <div class="col-md-6 text-center" id="header-pres">
-                    <img src="img/logo_pres.png" alt="Jardins du Nord"/>
+                    <img src="assets/img/logo_pres.png" alt="Jardins du Nord"/>
                     <p class="text-white">Paysagistes confirmés</p>
                 </div>
                 
@@ -72,7 +80,7 @@
         <div class="row align-items-center presentation-card">
             <!-- Image -->
             <div class="col-md-3">
-                <img class="img-thumbnail" src="img/entretien.png" alt="Image d'une personne qui tond la pelouse."/>
+                <img class="img-thumbnail" src="assets/img/entretien.png" alt="Image d'une personne qui tond la pelouse."/>
             </div>
             
             <!-- Contenu -->
@@ -111,7 +119,7 @@
             
             <!-- Image -->
             <div class="col-md-3 order-1 order-md-2">
-                <img class="img-thumbnail rounded" src="img/création.png" alt="Photo d'un massif bien entretenu avec des arbustes bien taillés et des pierres blanches."/>
+                <img class="img-thumbnail rounded" src="assets/img/création.png" alt="Photo d'un massif bien entretenu avec des arbustes bien taillés et des pierres blanches."/>
             </div>
         </div>
         
@@ -119,7 +127,7 @@
         <div class="row align-items-center presentation-card">
             <!-- Image -->
             <div class="col-md-3">
-                <img class="img-thumbnail rounded" src="img/service.png" alt="Image d'une main serrant la main à une branche d'arbre"/>
+                <img class="img-thumbnail rounded" src="assets/img/service.png" alt="Image d'une main serrant la main à une branche d'arbre"/>
             </div>
             
             <!-- Contenu -->
@@ -243,17 +251,20 @@
                 </div>
                 <!-- Contenu -->
                 <div class="modal-body">
-                    <h6>Site réalisé par <a href="https://arthurbeau.fr" target="_blank">Arthur</a>, <a href="https://www.marcsteliga.fr" target="_blank">Marc</a> et <a href="https://github.com/albancardon" target="_blank">Alban</a>.</h6>
+                    <h6>Site réalisé par <a href="https://arthurbeau.fr" target="_blank">Arthur B</a>, <a href="https://www.marcsteliga.fr" target="_blank">Marc S</a> et <a href="https://github.com/albancardon" target="_blank">Alban C</a>.</h6>
                     <p>Projet n°2 formation Développeur .NET à <a href="https://lamanu.fr/">La Manu</a>.</p>
                     <h6>Images :</h6>
                     <ul>
                         <li>
-                            Logo par <a href="https://www.marcsteliga.fr" target="_blank">Marc</a>.
+                            Logo par <a href="https://www.marcsteliga.fr" target="_blank">Marc S</a>.
                         </li>
                         <li>
                             Autres images par les contributeurs de <a href="https://pixabay.com">Pixabay</a>.
                         </li>
                     </ul>
+                    <hr>
+                    <p>Cette version a été modifiée pour être utilisée dans mon portfolio. Pour voir le code source originel, tel qu'il a été présenté et écrit, rendez-vous sur
+                        <a href="https://github.com/alkanife/jardinsdunord">le repo GitHub</a>. </p>
                 </div>
             </div>
         </div>    
@@ -264,12 +275,12 @@
             <div class="modal-content">
                 <!-- Titre -->
                 <div class="modal-header">
-                    <h5 class="modal-title company-greener">Conditions générales d'utilisation</h5>
+                    <h5 class="modal-title company-greener">Mentions légales</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- Contenu -->
                 <div class="modal-body">
-                    <a href="#">Les conditions générales d'utilisation sont disponibles uniquement au format PDF, dont le lien de téléchargement est accessible en cliquant sur ce message.</a>
+                    <p><a href="">Les conditions générales d'utilisation sont disponibles uniquement au format PDF, dont le lien de téléchargement est accessible en cliquant sur ce message.</a></p>
                     <p>Jardins du Nord se réserve la faculté de modifier à tout moment les présentes Conditions Générales. Le Client sera informé de ces modifications par tout moyen utile 30 (trente) jours au moins avant leur entrée en vigueur.</p>
                 </div>
             </div>
@@ -282,15 +293,14 @@
         <p class="col-md-4 mb-0 text-white">&copy; 2023 Jardins Du Nord</p>
 
         <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
-            <img src="img/logo_footer.png" class="bi me-2" width="59" height="46" alt="Logo de l'entreprise, version blanche">
+            <a href="#"><img src="assets/img/logo_footer.png" class="bi me-2" width="59" height="46" alt="Logo de l'entreprise, version blanche"></a>
         </div>
         <ul class="nav col-md-4 justify-content-center">
             <li class="nav-item"><a href="#credits" data-bs-toggle="modal" data-bs-target="#credits" class="nav-link px-2 text-white">Crédits</a></li>
-            <li class="nav-item"><a href="#cgu" data-bs-toggle="modal" data-bs-target="#cgu" class="nav-link px-2 text-white">C.G.U</a></li>
+            <li class="nav-item"><a href="#cgu" data-bs-toggle="modal" data-bs-target="#cgu" class="nav-link px-2 text-white">Mentions légales</a></li>
         </ul>
     </footer>
 
-    <script src="lib/jquery/dist/jquery.min.js"></script>
-    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://share.alkanife.dev/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

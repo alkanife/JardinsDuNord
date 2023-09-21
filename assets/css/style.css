@@ -4,24 +4,34 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-#header {
-  height: 30%;
-  background: url('../img/header.jpg') no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 70%;
-  margin-bottom: 15px;
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-#header-pres {
-  margin-top: 35px;
-  margin-bottom: 25px;
+.navbar img {
+  height: 67px;
+  width: 87px;
+}
+
+.navbar .nav-item a {
+  color: #264f25 !important;
+}
+
+.navbar .nav-item a:hover {
+  text-decoration: none !important;
+  opacity: 0.7;
 }
 
 #navbarBurgerButtonIcon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(112, 179, 66)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon {
+  width: 40px;
+  height: 40px;
 }
 
 #navbarBurgerButton {
@@ -33,6 +43,28 @@ body {
   outline: none;
   box-shadow: none;
 }
+
+/* Header */
+#header {
+  height: 30%;
+  background: url('../img/header.jpg') no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 70%;
+  margin-bottom: 15px;
+  padding-top: 90px;
+}
+/*
+#header-pres {
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+
+
+
 
 #nav a {
   color: #264f25;
@@ -102,4 +134,4 @@ footer {
 .modal-body {
   text-align: justify;
   padding-bottom: 0;
-}
+}*/

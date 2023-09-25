@@ -27,10 +27,10 @@
 </head>
 <body>
     <!-- Barre de navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-lg">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-lg" id="navbar">
         <div class="container">
             <!-- Logo -->
-            <a href="#"><img src="assets/img/Logo_Nav_only.png" alt="Logo de l'entreprise Jardins du Nord"></a>
+            <a href="#"><img src="assets/img/Logo_Nav_V2.png" alt="Logo de l'entreprise Jardins du Nord"></a>
             
             <!-- Bouton mobile -->
             <button class="navbar-toggler me-3 me-sm-0" id="navbarBurgerButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Afficher navigation">
@@ -41,13 +41,27 @@
             <div class="collapse navbar-collapse text-center" id="navbarContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item me-lg-3">
-                        <a class="nav-link" href="#header">Services</a>
+                        <a class="nav-link" href="#presentation">PRÉSENTATION</a>
                     </li>
+                    
+                    <li class="nav-item dropdown me-lg-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#services">TOUS LES SERVICES</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#services">ENTRETIEN</a></li>
+                            <li><a class="dropdown-item" href="#services">CRÉATION</a></li>
+                            <li><a class="dropdown-item" href="#services">ASSISTANCE</a></li>
+                        </ul>
+                    </li>
+                    
                     <li class="nav-item me-lg-3">
-                        <a class="nav-link" href="#find">Lieu</a>
+                        <a class="nav-link" href="#find-us">COORDONNÉES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">DEVIS</a>
                     </li>
                 </ul>
             </div>
@@ -57,30 +71,39 @@
     <!-- Bannière -->
     <div class="container-fluid" id="header">
         <div class="container">
-            <div class="row align-items-center">
-                <!-- Logo approfondi -->
-                <div class="col-md-6 text-center my-5" id="header-pres">
-                    <img src="assets/img/logo_pres.png" alt="Jardins du Nord"/>
-                    <p class="text-white">Paysagistes confirmés</p>
+            <div class="d-flex flex-column align-items-center mt-5" id="header-container">
+                <div class="image-box">
+                    <img src="assets/img/logo-text-white(1).png" alt="Jardins du Nord" class="img-fluid"/>
                 </div>
-                
-                <!-- Citation Albert Martin -->
-                <div class="col-md-6 text-center mb-3 mb-md-0">
-                    <figure class="text-white">
-                        <blockquote class="blockquote">
-                            <p>"Jardins sur mesure depuis 1982"</p>
-                        </blockquote>
-                        <figcaption class="blockquote-footer text-white">
-                            Albert Martin, <cite>fondateur</cite>
-                        </figcaption>
-                    </figure>
+                <p class="text-white mb-5 mt-3">Les spécialistes des jardins made in Nord</p>
+                <div class="mb-5 mt-3 header-buttons d-flex flex-column flex-sm-row">
+                    <a href="tel:" class="me-0 me-sm-3 mb-3 mb-sm-0"><i class="fa-solid fa-phone"></i> 03.44.03.44.03</a>
+                    <a href="#find-us"><i class="fa-solid fa-location-dot"></i> COMPIÈGNE (60)</a>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container">
-        <div class="row mt-lg-5 mb-3 mb-lg-5">
+    <div class="container mt-lg-5" id="presentation">
+        <div class="row mb-4 mb-lg-0">
+            <div class="col-12 col-lg-6">
+                <img src="test.svg" alt="">
+            </div>
+            
+            <div class="col-12 col-lg-6">
+                <h3 class="t-h">Découvrez la qualité made in Nord</h3>
+                <hr class="t-hr mb-3">
+                <p style="text-align: justify" class="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed elit ac ex placerat scelerisque quis egestas orci. Aliquam erat volutpat. Ut sodales nec magna id fermentum. Maecenas aliquam mauris et tortor posuere, in accumsan lectus pharetra. Nunc ac porttitor orci. Nulla pellentesque tincidunt lectus quis imperdiet. Sed malesuada, dui faucibus vehicula vehicula, urna mauris ultricies lorem, ut pretium purus mauris vitae ex. Suspendisse arcu nisl, vestibulum in hendrerit vitae, aliquam vel magna. In dolor diam, ultrices at ullamcorper quis, efficitur vel dui.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-lg-5" id="services">
+        <h3 class="t-h">Nous proposons...</h3>
+        <hr class="t-hr mb-3">
+        <div class="row mb-3 mb-lg-5">
             <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                 <div class="card shadow-sm">
                     <img src="assets/img/entretien.png" alt="Image d'une personne qui tond la pelouse."/>
@@ -88,7 +111,7 @@
                         <h2 class="text-center">ENTRETIEN</h2>
                         <p class="card-text">Forts de notre expertise et de notre engagement envers la satisfaction de nos clients, nous sommes fiers de vous offrir des services d'entretien paysager de haute qualité.</p>
                     </div>
-                    <div class="card-info m-0 d-flex justify-content-center align-items-center">
+                    <div class="card-info m-0 d-flex justify-content-center align-items-center" id="maintain-button">
                         <p class="m-0">EN SAVOIR PLUS <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
                 </div>
@@ -100,7 +123,7 @@
                         <h2 class="text-center">CRÉATION</h2>
                         <p class="card-text">Chez <span class="company-green">Jardins du Nord</span>, nous sommes passionnés par la création d'espaces extérieurs uniques et inspirants qui reflètent votre vision et votre style de vie.</p>
                     </div>
-                    <div class="card-info m-0 d-flex justify-content-center align-items-center">
+                    <div class="card-info m-0 d-flex justify-content-center align-items-center" id="creation-button">
                         <p class="m-0">EN SAVOIR PLUS <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
                 </div>
@@ -112,7 +135,7 @@
                         <h2 class="text-center">ASSISTANCE</h2>
                         <p class="card-text">Nous nous efforçons de vous offrir un service de qualité supérieure, en respectant les délais convenus et en veillant à ce que chaque étape de votre projet soit réalisée avec professionnalisme et précision.</p>
                     </div>
-                    <div class="card-info m-0 d-flex justify-content-center align-items-center">
+                    <div class="card-info m-0 d-flex justify-content-center align-items-center" id="assistance-button">
                         <p class="m-0">EN SAVOIR PLUS <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
                 </div>
@@ -159,58 +182,42 @@
     <div class="container" id="contact">
         <h3 class="t-h">Demander un devis</h3>
         <hr class="t-hr mb-3">
-
-        <form class="needs-validation" novalidate>
-            <!-- Prénom Nom -->
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="firstName">Prénom <span class="text-muted">(requis)</span></label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+        
+        <form>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="your-name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="your-name" name="your-name" required>
                 </div>
-
-                <div class="col-md-6 mb-3">
-                    <label for="lastName">Nom <span class="text-muted">(requis)</span></label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="col-md-6">
+                    <label for="your-surname" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="your-surname" name="your-surname" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="your-email" class="form-label">Adresse mail</label>
+                    <input type="email" class="form-control" id="your-email" name="your-email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="your-phone" class="form-label">Téléphone</label>
+                    <input type="text" class="form-control" id="your-phone" name="your-phone" required>
+                </div>
+                <div class="col-12">
+                    <label for="your-message" class="form-label">Votre projet</label>
+                    <textarea class="form-control" id="your-message" name="your-message" rows="5" placeholder="Décrivez-nous ce que vous voulez faire !" required></textarea>
+                </div>
+                <div class="ms-2 col-12 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                    <label class="form-check-label" for="defaultCheck1">
+                        J'accepte que <span class="company">Jardins du Nord</span> me recontacte, et accepte les conditions générales d'utilisation.
+                    </label>
+                </div>
+                <div class="col-12">
+                    <div class="mt-2 mx-1 mx-sm-0 d-flex flex-column flex-md-row justify-content-center justify-content-lg-start align-content-center align-items-center">
+                        <button class="btn btn-dark w-100 fw-bold" >ENVOYER LA DEMANDE</button>
+                        <a class="mt-2 mt-md-0 ms-md-4" href="mailto:">Nous envoyer un mail à la place</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Mail & téléphone -->
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="firstName">Adresse mail <span class="text-muted">(requis)</span></label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                </div>
-
-                <div class="col-md-6 mb-3">
-                    <label for="lastName">Numéro de téléphone <span class="text-muted">(requis)</span></label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                </div>
-            </div>
-
-            <!-- Objet -->
-            <div class="mb-3">
-                <label for="object">Objet <span class="text-muted">(requis)</span></label>
-                <select class="form-select d-block w-100" id="object" required>
-                    <option>Réalisation d'un devis</option>
-                    <option>Demande d'information</option>
-                    <option>Autre</option>
-                </select>
-            </div>
-
-            <!-- Message -->
-            <div class="mb-3">
-                <label for="message">Message <span class="text-muted">(requis)</span></label>
-                <textarea class="form-control" placeholder="" id="message" style="height: 100px"></textarea>
-            </div>
-
-            <!-- Accord -->
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="same-address">
-                <label class="custom-control-label" for="same-address">J'autorise <span class="company-green">Jardins du Nord</span> à me recontacter <span class="text-muted">(requis)</span></label>
-            </div>
-
-            <!-- Bouton (désactivé car démo) -->
-            <button class="btn text-white" type="button" id="submitButton">Envoyer</button>
         </form>
     </div>
 
@@ -221,8 +228,8 @@
             <div class="modal-content">
                 <!-- Titre -->
                 <div class="modal-header">
-                    <h5 class="modal-title company-greener">Crédits</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title company-greener">CRÉDITS</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- Contenu -->
                 <div class="modal-body">
@@ -234,11 +241,15 @@
                             Logo par <a href="https://www.marcsteliga.fr" target="_blank">Marc S</a>.
                         </li>
                         <li>
+                            Header par <a href="https://unsplash.com/fr/@mclee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">MChe Lee</a> sur <a href="https://unsplash.com/fr/photos/Y6AL7A-ARG8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        
+                        </li>
+                        <li>
                             Autres images par les contributeurs de <a href="https://pixabay.com">Pixabay</a>.
                         </li>
                     </ul>
                     <hr>
-                    <p>Cette version a été modifiée pour être utilisée dans mon portfolio. Pour voir le code source originel, tel qu'il a été présenté et écrit, rendez-vous sur
+                    <p class="m-0">Cette version a été modifiée pour être utilisée dans mon portfolio. Pour voir le code source originel, tel qu'il a été présenté et écrit, rendez-vous sur
                         <a href="https://github.com/alkanife/jardinsdunord">le repo GitHub</a>. </p>
                 </div>
             </div>
@@ -250,13 +261,13 @@
             <div class="modal-content">
                 <!-- Titre -->
                 <div class="modal-header">
-                    <h5 class="modal-title company-greener">Mentions légales</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title company-greener">MENTIONS LÉGALES</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- Contenu -->
                 <div class="modal-body">
                     <p><a href="">Les conditions générales d'utilisation sont disponibles uniquement au format PDF, dont le lien de téléchargement est accessible en cliquant sur ce message.</a></p>
-                    <p>Jardins du Nord se réserve la faculté de modifier à tout moment les présentes Conditions Générales. Le Client sera informé de ces modifications par tout moyen utile 30 (trente) jours au moins avant leur entrée en vigueur.</p>
+                    <p class="m-0">Jardins du Nord se réserve la faculté de modifier à tout moment les présentes Conditions Générales. Le Client sera informé de ces modifications par tout moyen utile 30 (trente) jours au moins avant leur entrée en vigueur.</p>
                 </div>
             </div>
         </div>
@@ -264,16 +275,20 @@
     <!------- ------ ------->
 
     <!-- Footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top text-md-center">
-        <p class="col-md-4 mb-0 text-white">&copy; 2023 Jardins Du Nord</p>
-
-        <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
-            <a href="#"><img src="assets/img/logo_footer.png" class="bi me-2" width="59" height="46" alt="Logo de l'entreprise, version blanche"></a>
+    <footer class="row m-0 mt-5 py-3 border-top text-center w-100">
+        
+        <div class="col-12 col-lg py-3 p-lg-0 d-lg-flex justify-content-center align-items-center">
+            <p class=" mb-0 text-white w-100">&copy; 2023 Jardins Du Nord</p>
         </div>
-        <ul class="nav col-md-4 justify-content-center">
-            <li class="nav-item"><a href="#credits" data-bs-toggle="modal" data-bs-target="#credits" class="nav-link px-2 text-white">Crédits</a></li>
-            <li class="nav-item"><a href="#cgu" data-bs-toggle="modal" data-bs-target="#cgu" class="nav-link px-2 text-white">Mentions légales</a></li>
-        </ul>
+        
+        <div class="col-12 col-lg py-3 p-lg-0">
+            <a href="#"><img src="assets/img/logo_footer.png" class="bi" width="59" height="46" alt="Logo de l'entreprise, version blanche"></a>
+        </div>
+        
+        <div class="col-12 col-lg py-3 p-lg-0 d-lg-flex justify-content-center align-items-center">
+            <a href="#credits" data-bs-toggle="modal" data-bs-target="#credits" class="nav-link text-white m-0 me-lg-3">Crédits</a>
+            <a href="#cgu" data-bs-toggle="modal" data-bs-target="#cgu" class="nav-link text-white m-0">Mentions légales</a>
+        </div>
     </footer>
 
     <script src="https://share.alkanife.dev/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

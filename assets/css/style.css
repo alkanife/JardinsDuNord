@@ -4,6 +4,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+#services, #contact, #find-us, #presentation {
+  scroll-margin-top: 100px;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -90,6 +94,14 @@ nav .dropdown-menu a:focus {
   padding-left: 5px;
 }
 
+/* Presentation */
+#presentation .text p {
+  text-align: justify;
+}
+
+.roman {
+  font-family: "Times New Roman", serif;
+}
 
 /* Cards */
 .card {
@@ -198,6 +210,7 @@ nav .dropdown-menu a:focus {
   color: #558632;
 }
 
+/* Modals */
 .modal * {
   border-radius: 0;
 }
@@ -212,6 +225,7 @@ nav .dropdown-menu a:focus {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Footer */
 footer {
   background-color: #264f25;
 }
@@ -219,27 +233,3 @@ footer {
 footer a:hover {
   opacity: .7;
 }
-
-#services, #contact, #find-us, #presentation {
-  scroll-margin-top: 100px;
-}
-
-
-/*
-
-
-
-.modal-body a {
-  text-decoration: none;
-  color: #70b342;
-}
-
-.modal-body a:hover {
-  text-decoration: underline;
-  color: #264f25;
-}
-
-.modal-body {
-  text-align: justify;
-  padding-bottom: 0;
-}*/

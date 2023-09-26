@@ -4,24 +4,39 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-#header {
-  height: 30%;
-  background: url('../img/header.jpg') no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 70%;
-  margin-bottom: 15px;
+#services, #contact, #find-us, #presentation {
+  scroll-margin-top: 100px;
 }
 
-#header-pres {
-  margin-top: 35px;
-  margin-bottom: 25px;
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar img {
+  height: 67px;
+}
+
+.navbar .nav-item a {
+  color: #264f25 !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-item a:hover {
+  text-decoration: none !important;
+  opacity: 0.7;
 }
 
 #navbarBurgerButtonIcon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(112, 179, 66)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon {
+  width: 40px;
+  height: 40px;
 }
 
 #navbarBurgerButton {
@@ -34,72 +49,187 @@ body {
   box-shadow: none;
 }
 
-#nav a {
-  color: #264f25;
+nav .dropdown-menu {
+  border-radius: 0;
 }
 
-
-#discover {
-  background-color: rgba(255, 255, 255, 0.75);
+nav .dropdown-menu a:focus {
+  background: #70b342;
 }
 
-#services img {
-  padding: 0;
-  border: none;
-  border-radius: 3px;
+/* Header */
+#header {
+  min-height: 30%;
+  background: url('../img/header.png') no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 15px;
+  padding-top: 90px;
 }
 
-.presentation-text {
-  text-align: justify;
+.image-box {
+  max-width: 520px;
 }
 
-.presentation-card {
-  margin-bottom: 30px;
-}
-
-.company-green {
-  color: #70b342;
-}
-.company-greener {
-  color: #264f25;
-}
-
-#find h1 {
-  margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 767px) {
-  iframe {
-    height: 500px;
-  }
-}
-
-form label {
-  color: #264f25;
-}
-
-#submitButton {
-  margin-top: 20px;
-  margin-bottom: 20px;
+#header .header-buttons a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 130%;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 10px;
+  padding-bottom: 7px;
   background-color: #70b342;
 }
 
-footer {
-  background-color: #264f25;
+#header .header-buttons a:hover {
+  background-color: #558632;
+}
+
+#header .header-buttons i {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* Presentation */
+#presentation .text p {
+  text-align: justify;
+}
+
+.roman {
+  font-family: "Times New Roman", serif;
+}
+
+/* Cards */
+.card {
+  border-radius: 0;
+  height: 100%;
+}
+
+.card h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 150%;
+  /*color: white;
+  background-color: #70b342;*/
+}
+
+.card-body {
+  text-align: justify;
+}
+
+.card-info {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #70b342;
+  height: 30px;
+  cursor: pointer;
+}
+
+.card-info:hover {
+  background-color: #558632;
+}
+
+.card-info p {
+  font-size: 90%;
+}
+
+.card-info i {
+  margin-left: 10px;
+}
+
+
+/* Location */
+.t-h {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
-.modal-body a {
+#find-us p {
+  text-align: justify;
+}
+
+.t-hr {
+  margin: 5px 0 0;
+  background-image: linear-gradient(90deg, rgba(112, 179, 66, 0.5), transparent);
+  border: none;
+  opacity: 100;
+  height: 3px;
+  max-width: 500px;
+}
+
+#find-us .info-box {
+  margin-bottom: 20px;
+}
+
+#find-us .info-box h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  margin: 0;
+  margin-bottom: 5px;
+  width: fit-content;
+  padding: 4px;
+  color: white;
+  background-color: #70b342;
+}
+
+
+#find-us .info-box p {
+   margin: 0;
+}
+
+.company {
+  color: #70b342;
+}
+
+#contact * {
+  border-radius: 0;
+}
+
+#contact button {
+  max-width: 300px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #70b342;
+  border: none;
+  transition: none;
+}
+
+#contact button:hover {
+  background-color: #558632;
+}
+
+#contact a {
   text-decoration: none;
   color: #70b342;
 }
 
-.modal-body a:hover {
-  text-decoration: underline;
-  color: #264f25;
+#contact a:hover {
+  color: #558632;
+}
+
+/* Modals */
+.modal * {
+  border-radius: 0;
 }
 
 .modal-body {
   text-align: justify;
-  padding-bottom: 0;
+}
+
+.modal-header {
+  background-color: #70b342;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Footer */
+footer {
+  background-color: #264f25;
+}
+
+footer a:hover {
+  opacity: .7;
 }

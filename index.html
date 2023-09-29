@@ -48,7 +48,7 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             SERVICES
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu text-center text-lg-start">
                             <li><a class="dropdown-item" href="#services">TOUS LES SERVICES</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#services">ENTRETIEN</a></li>
@@ -78,7 +78,7 @@
                 </div>
                 
                 <!-- Catchphrase -->
-                <p class="text-white mb-5 mt-3">Les spécialistes des paradis sur mesure</p>
+                <p class="text-white mb-5 mt-3 catchphrase">ENTRETIEN • CRÉATION • ASSISTANCE</p>
                 
                 <!-- Phone/location -->
                 <div class="mb-5 mt-3 header-buttons d-flex flex-column flex-sm-row">
@@ -135,7 +135,7 @@
                     </div>
                     
                     <!-- Button -->
-                    <div class="card-info m-0 d-flex justify-content-center align-items-center" id="maintain-button">
+                    <div class="card-info m-0 d-flex justify-content-center align-items-center" id="maintain-button" href="#demoModal" data-bs-toggle="modal" data-bs-target="#demoModal">
                         <p class="m-0">EN SAVOIR PLUS <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                     </div>
                     
                     <!-- Button -->
-                    <div class="card-info m-0 d-flex justify-content-center align-items-center" id="creation-button">
+                    <div class="card-info m-0 d-flex justify-content-center align-items-center" id="creation-button" href="#demoModal" data-bs-toggle="modal" data-bs-target="#demoModal">
                         <p class="m-0">EN SAVOIR PLUS <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                     </div>
                     
                     <!-- Button -->
-                    <div class="card-info m-0 d-flex justify-content-center align-items-center" id="assistance-button">
+                    <div class="card-info m-0 d-flex justify-content-center align-items-center" id="assistance-button" href="#demoModal" data-bs-toggle="modal" data-bs-target="#demoModal">
                         <p class="m-0">EN SAVOIR PLUS <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
                 </div>
@@ -251,8 +251,8 @@
                 </div>
                 
                 <div class="ms-2 col-12 form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
-                    <label class="form-check-label" for="defaultCheck1">
+                    <input class="form-check-input" type="checkbox" value="" id="checkForm" required>
+                    <label class="form-check-label" for="checkForm">
                         J'accepte que <span class="company">Jardins du Nord</span> me recontacte, et accepte les conditions générales d'utilisation.
                     </label>
                 </div>
@@ -318,6 +318,28 @@
                 <div class="modal-body">
                     <p><a href="">Les conditions générales d'utilisation sont disponibles uniquement au format PDF, dont le lien de téléchargement est accessible en cliquant sur ce message.</a></p>
                     <p class="m-0">Jardins du Nord se réserve la faculté de modifier à tout moment les présentes Conditions Générales. Le Client sera informé de ces modifications par tout moyen utile 30 (trente) jours au moins avant leur entrée en vigueur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Demo -->
+    <div class="modal fade" id="demoModal" aria-labelledby="demoModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Title -->
+                <div class="modal-header">
+                    <h5 class="modal-title company-greener">DÉMO</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Content -->
+                <div class="modal-body">
+                    <p>
+                        Ce site est une démonstration, il n'y a pas d'autres pages.
+                    </p>
+                    <p class="m-0 p-0">
+                        Pour en savoir plus à mon sujet, rendez-vous sur mon <a href="https://arthurbeau.fr">portfolio</a>.
+                    </p>
                 </div>
             </div>
         </div>

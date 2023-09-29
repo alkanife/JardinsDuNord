@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
 }
 
 #services, #contact, #find-us, #presentation {
@@ -51,6 +52,7 @@ body {
 
 nav .dropdown-menu {
   border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 nav .dropdown-menu a:focus {
@@ -71,6 +73,10 @@ nav .dropdown-menu a:focus {
 
 .image-box {
   max-width: 520px;
+}
+
+.catchphrase {
+  font-family: 'Poppins', sans-serif;
 }
 
 #header .header-buttons a {
@@ -185,6 +191,7 @@ nav .dropdown-menu a:focus {
   color: #70b342;
 }
 
+/* Contact */
 #contact * {
   border-radius: 0;
 }
@@ -208,6 +215,11 @@ nav .dropdown-menu a:focus {
 
 #contact a:hover {
   color: #558632;
+}
+
+#contact .form-check-input:checked {
+  background-color: #70b342;
+  border-color: #70b342;
 }
 
 /* Modals */
